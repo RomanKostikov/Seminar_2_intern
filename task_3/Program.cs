@@ -4,9 +4,9 @@
 
 Console.Clear();
 Console.Write("Введите число 1: ");
-int first_number = int.Parse(Console.ReadLine());
+int first_number = int.Parse(Console.ReadLine()!);
 Console.Write("Введите число 2: ");
-int second_number = int.Parse(Console.ReadLine());
+int second_number = int.Parse(Console.ReadLine()!);
 if (first_number == 0)
 {
     Console.WriteLine("Error, 0!!!");
