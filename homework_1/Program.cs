@@ -6,5 +6,16 @@
 Console.Clear();
 Console.Write("Введите число: ");
 int number = int.Parse(Console.ReadLine()!);
-int number_1 = (number / 10) % 10;
-Console.WriteLine($"Число {number} сократилось до {number_1}");
+if (number < 0)
+{
+    number *= -1;
+}
+if (number < 100 || number > 999)
+{
+    Console.WriteLine("Вы ввели неправильное значение!");
+}
+else
+{
+    int number_1 = (number / 10) % 10;
+    Console.WriteLine(number_1);
+}
