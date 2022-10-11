@@ -7,14 +7,6 @@
 Console.Clear();
 Console.Write("Введите число дня недели: ");
 int day = int.Parse(Console.ReadLine()!);
-if (day < 1 || day > 7)
-{
-    Console.WriteLine("Вы ввели неправильное значение!");
-}
-if (day == 1) Console.WriteLine("нет");
-if (day == 2) Console.WriteLine("нет");
-if (day == 3) Console.WriteLine("нет");
-if (day == 4) Console.WriteLine("нет");
-if (day == 5) Console.WriteLine("нет");
-if (day == 6) Console.WriteLine("да");
-if (day == 7) Console.WriteLine("да");
+if (day >= 1 && day <= 5) Console.WriteLine("нет");
+else if (day == 6 || day == 7) Console.WriteLine("да");
+else Console.WriteLine("Такого дня недели не существует");
